@@ -30,10 +30,10 @@ export default function Home() {
       <Row>
         <Col lg={6}>
           <p>
-            The Metropolitan Museum of Art of New York City, colloquially "the
-            Met", is the largest art museum in the Americas. Its permanent
-            collection contains over two million works, divided among 17
-            curatorial departments. The main building at 1000 Fifth Avenue,
+            The Metropolitan Museum of Art of New York City, colloquially
+            &quot;the Met&quot;, is the largest art museum in the Americas. Its
+            permanent collection contains over two million works, divided among
+            17 curatorial departments. The main building at 1000 Fifth Avenue,
             along the Museum Mile on the eastern edge of Central Park on
             Manhattan's Upper East Side, is by area one of the world's largest
             art museums. A much smaller second location, The Cloisters at Fort
@@ -70,7 +70,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              "https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art"
+              https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art
             </a>
           </p>
         </Col>
