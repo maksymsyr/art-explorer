@@ -78,9 +78,10 @@ export default function AdvancedSearch() {
             <Form.Label>Geo Location</Form.Label>
             <Form.Control type="text" {...register("geoLocation")} />
             <Form.Text className="text-secondary">
-              Case Sensitive String (e.g., "Europe", "France", "Paris", "China",
-              "New York", etc.), with multiple values separated by the |
-              operator
+              Case Sensitive String (e.g., &quot;Europe&quot;,
+              &quot;France&quot;, &quot;Paris&quot;, &quot;China&quot;,
+              &quot;New York&quot;, etc.), with multiple values separated by the
+              | operator
             </Form.Text>
           </Form.Group>
         </Col>
