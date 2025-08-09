@@ -22,17 +22,14 @@ export default function Login(props) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    async function handleSubmit(e) {
-      e.preventDefault();
-
-      try {
-        await authenticateUser(user, password);
-        await updateAtoms();
-        router.push("/favourites");
-      } catch (err) {
-        setWarning(
-          err?.message || JSON.stringify(err) || "ERROR: Unable to login"
-        );
+    try {
+      await authenticateUser(user, password);
+      await updateAtoms();
+      router.push("/favourites");
+    } catch (err) {
+      setWarning(
+        err?.message || JSON.stringify(err) || "ERROR: Unable to login"
+      );
     }
   }
 
