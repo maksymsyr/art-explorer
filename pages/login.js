@@ -27,9 +27,19 @@ export default function Login(props) {
       await updateAtoms();
       router.push("/favourites");
     } catch (err) {
-      setWarning(
-        err?.message || JSON.stringify(err) || "ERROR: Unable to login"
-      );
+      let errorMsg;
+      if (err?.message) {
+        errorMsg = err.message;
+      } else if (typeof err === "string") {
+        errorMsg = err;
+      } else {
+        try {
+          errorMsg = JSON.stringify(err);
+        } catch {
+          errorMsg = "Unknown error occurred";
+        }
+      }
+      setWarning(errorMsg);
     }
   }
 
