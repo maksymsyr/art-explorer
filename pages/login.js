@@ -27,7 +27,8 @@ export default function Login(props) {
       await updateAtoms();
       router.push("/favourites");
     } catch (err) {
-      setWarning(err.message);
+      setWarning(err?.message || JSON.stringify(err) || "ERROR: Unable to login");
+      }
     }
   }
 
