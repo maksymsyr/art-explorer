@@ -41,3 +41,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/maksymsyr/art-explorer.git
 cd art-explorer
+npm install
+npm run dev
+
+The app will start on http://localhost:8080
