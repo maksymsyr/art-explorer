@@ -39,5 +39,5 @@ Deployed on **Vercel**, with full support for local development.
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/art-explorer.git
+git clone https://github.com/maksymsyr/art-explorer.git
 cd art-explorer
